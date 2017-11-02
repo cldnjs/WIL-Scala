@@ -14,5 +14,9 @@ object ListEx {
 
         println(twoThree + " was not mutated.")
         println("Thus, " + oneTwoThree + " is a new List.")
+
+        val thrill = "Will" :: "fill" :: "until" :: Nil // 콘즈 연산자를 이용해서 배열 생성
+        val count = thrill.count(s => s.length == 4)
+        println(count)
     }
 }
